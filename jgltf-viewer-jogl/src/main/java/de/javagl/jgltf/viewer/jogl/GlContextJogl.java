@@ -205,7 +205,7 @@ class GlContextJogl implements GlContext
         // (Also see https://github.com/javagl/JglTF/issues/12)
         if (!shaderSource.contains("#version"))
         {
-            String versionString = "#version 120";
+            String versionString = "#version 330";
             logger.warning("Inserting GLSL version specifier \"" + 
                 versionString + "\" in shader code");
             String shaderSourceWithVersion = 
